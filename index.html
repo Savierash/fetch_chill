@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch & Chill </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navbar part-->
+    <header>
+        <img src="pic1.jpeg" alt="Fetch & Chill Logo">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">Loving Care for Your Pets</div>
+
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">🐾 Pet Sitting</div>
+            <div class="service-card">🚿 Grooming</div>
+            <div class="service-card">🏥 Vet Visits</div>
+            <div class="service-card">🐕 Walking</div>
+            <div class="service-card">🍖 Nutrition</div>
+        </div>
+    </div>
+
+    <section class="contact" id="contact">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Phone: 123-456-7890</p>
+            <p>Email: contact@fetchandchill.com</p>
+        </div>
+        <form action="submit.php" method="post">
+            <label for="name">Name</label><br/>
+            <input type="text" id="name" name="name" maxlength="55" required><br>
+
+            <label for="email">Email</label><br/>
+            <input type="email" id="email" name="email" maxlength="55" required><br>
+
+            <label for="message">Message</label><br/>
+            <textarea id="message" name="message" required></textarea><br/>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
