@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@
   input {
     font-family: "Poppins", sans-serif;
   }
-  
+
 /*NAVBAR*/
 .navbar {
     display: flex;
@@ -47,11 +49,13 @@
     font-weight: 600;
     padding: 10px 15px;
     transition: 0.3s;
+    border-radius: 25px;
 }
 
 .nav-links a:hover {
-    color: #04befe;
+    background-color: #E4813A;
 }
+
 
 /* Responsive Navbar */
 @media (max-width: 768px) {
@@ -69,12 +73,12 @@
   
 /*HOME SECTION*/
 .home {
-    background: linear-gradient(135deg, #04befe, #4481eb);
+    background-color: #C5DAEF;
     padding: 80px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    height: 100vh;
 }
 
 .home-container {
@@ -90,13 +94,18 @@
 }
 
 .home-content h1 {
-    font-size: 2.5rem;
+    font-size: 70px;
     margin-bottom: 15px;
+    font-family: "Mochiy Pop One";
+    color: #33363F;
+    
 }
 
 .home-content p {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    color: #33363F;
+    font-family: "Mochiy Pop One";
 }
 
 .home-btn {
@@ -136,10 +145,11 @@
   
 /*ABOUT SECTION*/
 .about-us {
-    background-color: #f9f9f9;
+    background-color: #C5DAEF;
     padding: 50px 20px;
     display: flex;
     justify-content: center;
+    height: 100vh;
 }
 
 .about-container {
