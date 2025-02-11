@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Mochiy+Pop+One&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 * {
     margin: 0;
@@ -125,9 +127,8 @@
 
 .home-image img {
     width: 100%;
-    max-width: 500px;
+    max-width: 1000px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
@@ -205,5 +206,140 @@
 
     .about-image img {
         max-width: 100%;
+    }
+}
+
+
+/* Service section */
+.services {
+    background-color: #E4EFE4; 
+    padding: 30px 0;
+}
+
+.services-container {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #E5A641;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 24%;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: translateY(-10px); 
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.service-highlight {
+    background-color: #C5DAEF; 
+    padding: 30px 0;
+    text-align: center;
+}
+
+.service-highlight-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+    padding: 20px;
+}
+
+.service-highlight-text {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.service-highlight-text h2 {
+    background-image: url("img/pic10.jpg"); 
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding: 95px;
+    font-size: 36px;
+    color: #33363F; 
+    font-weight: bold;
+    font-family: "Mochiy Pop One", sans-serif;
+    border-radius: 10px;
+}
+
+.service-highlight-image {
+    flex: 1;
+    text-align: center;
+}
+
+.service-highlight-image img {
+    width: 100%;
+    max-width: 500px; 
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-highlight-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-highlight-text {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .service-highlight-image img {
+        max-width: 80%;
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 80%; 
+        margin-bottom: 30px;
     }
 }
