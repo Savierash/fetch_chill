@@ -213,7 +213,7 @@
 /* Service section */
 .services {
     background-color: #E4EFE4; 
-    padding: 30px 0;
+    padding: 100px;
 }
 
 .services-container {
@@ -343,3 +343,156 @@
         margin-bottom: 30px;
     }
 }
+
+
+/*pet profile*/
+.pet-profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    background-color: #C5DAEF;
+}
+
+.pet-profile-title {
+    position: absolute;
+    top: -60px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: start;
+    background: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 25px;
+    color: #534E46;
+}
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 20px;
+}
+
+.profile-left-container {
+    width: 100%;
+    max-width: 48%;
+}
+
+.profile-left-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.profile-left {
+    padding: 20px;
+}
+
+.pet-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.upload-container button {
+    padding: 10px 15px;
+    background-color: #4765FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-right-container {
+    width: 100%;
+    max-width: 48%;
+}
+
+.profile-right-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.profile-right {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.grid-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.form-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="button"] {
+    background-color:#4765FF;
+    color: white;
+}
+
+button[type="submit"] {
+    background-color: #4765FF;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-left-container,
+    .profile-right-container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+

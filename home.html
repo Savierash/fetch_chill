@@ -48,7 +48,7 @@
 </section>
 
 <!-- SERVICES SECTION -->
-<section class="service-highlight">
+<section class="service-highlight" id="services">
     <div class="service-highlight-container">
         <div class="service-highlight-text">
             <h2>Find Your Good Services <br> For Your Pet</h2>
@@ -59,7 +59,7 @@
     </div>
 </section>
 
-<section class="services" id="services">
+<section class="services" > 
     <div class="services-container">
         <h2>Services we offer</h2>
         <div class="services-list">
@@ -78,6 +78,71 @@
             <div class="service-item">
                 <img src="img/pic8.jpg" alt="Playtime & Fun">
                 <h3>Training</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PET PROFILE SECTION -->
+<section class="pet-profile">
+    <div class="pet-profile-title">
+        <h2>PET INFO</h2>
+    </div>
+
+    <div class="profile-container">
+        <!-- Pet Profile Container -->
+        <div class="profile-left-container">
+            <h2>Pet Profile</h2>
+            <div class="profile-left">
+                <img id="pet-image" src="img/pet-placeholder.jpg" alt="Pet Image" class="pet-image">
+                
+                <div class="upload-container">
+                    <button type="button" onclick="uploadImage()">Upload Image</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pet Details Container -->
+        <div class="profile-right-container">
+            <h2>Pet Details</h2>
+            <div class="profile-right">
+                <form id="pet-form">
+                    <label for="pet-name">Name:</label>
+                    <input type="text" id="pet-name" name="pet-name" required>
+                    
+                    <div class="grid-container">
+                        <div>
+                            <label for="pet-age">Age:</label>
+                            <input type="number" id="pet-age" name="pet-age" required>
+                        </div>
+                        <div>
+                            <label for="pet-dob">Date of Birth:</label>
+                            <input type="date" id="pet-dob" name="pet-dob" required>
+                        </div>
+                        <div>
+                            <label for="pet-gender">Gender:</label>
+                            <select id="pet-gender" name="pet-gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="pet-breed">Breed:</label>
+                            <input type="text" id="pet-breed" name="pet-breed" required>
+                        </div>
+                    </div>
+                    
+                    <label for="owner-name">Owner's Name:</label>
+                    <input type="text" id="owner-name" name="owner-name" required>
+                    
+                    <label for="owner-address">Owner's Address:</label>
+                    <textarea id="owner-address" name="owner-address" required></textarea>
+                    
+                    <div class="form-buttons">
+                        <button type="button" onclick="goBack()">Back</button>
+                        <button type="submit">Save</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
