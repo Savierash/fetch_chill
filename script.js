@@ -11,19 +11,26 @@ sign_in_btn.addEventListener("click", () => {
   container.classList.remove("sign-up-mode");
 });
 
-//auuthentication
-//document.getElementById("loginForm").addEventListener("submit", function(event) {
-    //event.preventDefault(); // Pigilan ang default form submission
-    
-    // Kunin ang input values
-    //let username = document.getElementById("username").value;
-    //let password = document.getElementById("password").value;
+//PHP FETCH CODE
+document.getElementById('registerForm').onsubmit = function(event) {
+    event.preventDefault();
+    fetch('signup.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(this)).toString()
+    })
+    .then(response => response.json())
+    .then(data => alert(data.message));
+};
 
-    // Simpleng validation (palitan ito ng actual authentication method kung may backend)
-    //if (username === "admin" && password === "password123") {
-        //sessionStorage.setItem("isLoggedIn", "true"); // I-save ang login state
-        //window.location.href = "home.html"; // Redirect sa homepage
-    //} else {
-        //alert("Invalid username or password!");
-    //}
-//});
+document.getElementById('loginForm').onsubmit = function(event) {
+    event.preventDefault();
+    fetch('signin.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(this)).toString()
+    })
+    .then(response => response.json())
+    .then(data => alert(data.message));
+};
+
